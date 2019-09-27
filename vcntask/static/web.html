@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Archive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title">
+              Websites Table
+            </h1>
+          </div>
+        </div>
+    </section>
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="container">
+            <label class="label">Archive a website </label>
+          <div class="field has-addons">
+            
+            <div class="control is-expanded">
+              <input class="input" type="text" placeholder="URL" id="newUrl">
+            </div>
+            <div class="control">
+                <button class="button is-link" id="urlSubmit">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="notification" style="display: none;" id="message">
+
+        </div>
+        <table class="table is-expansive" id="websitesTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Screenshot</th>
+            </tr>
+          </thead>
+          <tbody id="websitesBody"></tbody>
+        </table>
+      </div> <!-- column is-10-->
+    </div> <!-- columns -->
+  <script src="js/websites.js"></script>
+  </body>
+</html>

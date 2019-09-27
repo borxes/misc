@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VeganCoin Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+          <h1 class="title">
+            Client Pages
+          </h1>
+          <ul>
+            <li><a href="ether.html">ETH Wallet scan and transfer</a></li>
+            <li><a href="web.html">Website archive</a></li>
+          </ul>
+    
+        </div>
+      </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          API
+        </h1>
+        <h4 class="subtitle">Save website</h4>
+        <p>Endpoint: /savewebshot</p>
+        <p>Request type: GET</p>
+        <p>Query Parameters: <ul><li><i>url</i> - the URL string</li> </p>
+        <p>Response: URL metadata (name, title, description</p>
+        <br>
+        <h4 class="subtitle">Wallet info</h4>
+        <p>Endpoint: /walletinfo/{address}</p>
+        <p>Request type: GET</p>
+        <p>Query Parameters: <ul><li><i>address</i> - Ethereum address</li> </p>
+        <p>Response: Wallet info(balance, USD balance, last 3 transactions</p>
+
+      </div>
+    </section>
+  </body>
+</html>
