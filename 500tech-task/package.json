@@ -1,0 +1,15 @@
+{
+  "name": "500tech-screening-coding-test",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

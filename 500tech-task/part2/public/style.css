@@ -1,0 +1,11 @@
+input {
+  overflow: hidden;
+  width: 32px;
+  height: 30px;
+  border-color: grey;
+  transition: width 0.4s linear, border-color 0.4s linear;
+}
+
+input.expanded {
+  width: 236px;
+}

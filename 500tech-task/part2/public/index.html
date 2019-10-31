@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+<h2>The Challenge</h2>
+
+<p>Implement auto-expandable input control which meets the following requirements:</p>
+<ol>
+  <li>Should be expanded when the user hovers above it</li>
+  <li>Should remain expanded when the user focuses inside and starts typing</li>
+  <li>Should collapse if the user leaves the field empty</li>
+  <li>Should stay expanded as long as there is a value inside of it</li>
+</ol>
+
+Collapsed :<br />
+<input type="text" /><br />
+Expanded :<br />
+<input type="text" class="expanded" />
+<br /><br/>
+Solution
+<input type="text" class="input500" />
+  
+
+
+<h2>Submission Instructions</h3>
+  <ol>
+    <li>
+      <p>Download the project using the download button in the top left corner</p>
+      <img src="data:image/png;base64,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">
+    </li>
+    <br>
+    <li>Reply to the email you've received with the project attached</li>
+  </ol>
+
+</body>
+</html>
